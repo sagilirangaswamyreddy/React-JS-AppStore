@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.input {
+  width: 30%;
+  height: 40px;
+  font-size: 22px;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 25px;
+  border: 0;
+  height: 1.5rem;
+}
+.imgUrl {
+  height: 1.5rem;
+  color: #252617;
+}
+
+.input:active {
+  border: 0 solid transparent;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', ' Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.app-container {
+  background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+}
+
+.title {
+  font-family: 'Bree Serif';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 56px;
+  color: #1e293b;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.description {
+  max-width: 300px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #616e7c;
+  margin: auto auto 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .description {
+    max-width: 730px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.tabs-container {
+  max-width: 300px;
+  margin: auto;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .tabs-container {
+    max-width: 455px;
+  }
+}
+
+.project-list-container {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .project-list-container {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .input {
+    width: 70%;
+  }
+}
